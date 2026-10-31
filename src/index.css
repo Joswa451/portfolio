@@ -1382,9 +1382,21 @@ a.contact-item:hover {
 }
 
 @media (max-width: 768px) {
+  :root {
+    --nav-height: 64px;
+  }
+
   .container,
   .nav-container {
-    width: min(1160px, 100% - 36px);
+    width: min(1160px, 100% - 36px - env(safe-area-inset-left) - env(safe-area-inset-right));
+  }
+
+  /* Keep page content available on phones even if scroll observers are delayed. */
+  .reveal,
+  .reveal.is-visible {
+    opacity: 1;
+    transform: none;
+    transition: none;
   }
 
   .nav-social {
@@ -1398,8 +1410,8 @@ a.contact-item:hover {
   .nav-menu {
     position: fixed;
     top: var(--nav-height);
-    left: 0;
-    right: 0;
+    left: env(safe-area-inset-left);
+    right: env(safe-area-inset-right);
     flex-direction: column;
     align-items: stretch;
     gap: 2px;
@@ -1456,12 +1468,14 @@ a.contact-item:hover {
 @media (max-width: 640px) {
   .container,
   .nav-container {
-    width: min(1160px, 100% - 32px);
+    width: min(1160px, 100% - 32px - env(safe-area-inset-left) - env(safe-area-inset-right));
   }
 
   .hero {
-    padding-top: calc(var(--nav-height) + 32px);
-    padding-bottom: 72px;
+    min-height: 100vh;
+    min-height: 100svh;
+    padding-top: calc(var(--nav-height) + 24px + env(safe-area-inset-top));
+    padding-bottom: calc(56px + env(safe-area-inset-bottom));
   }
 
   .hero-title {
@@ -1483,8 +1497,9 @@ a.contact-item:hover {
   }
 
   .avatar-container {
-    width: 320px;
-    height: 320px;
+    width: min(320px, 100%);
+    height: auto;
+    aspect-ratio: 1;
   }
 
   .orbit-ring {
