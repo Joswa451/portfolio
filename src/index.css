@@ -33,6 +33,7 @@
 html {
   scroll-behavior: smooth;
   background: var(--bg);
+  min-width: 320px;
 }
 
 body {
@@ -42,6 +43,11 @@ body {
   line-height: 1.6;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100vh;
+  min-height: 100svh;
 }
 
 body::before {
@@ -222,6 +228,7 @@ main:focus {
   position: fixed;
   inset: 0 0 auto;
   z-index: 1000;
+  width: 100%;
   border-bottom: 1px solid transparent;
   background: rgba(6, 11, 24, 0.55);
   transition:
@@ -1403,6 +1410,17 @@ a.contact-item:hover {
     display: none;
   }
 
+  .navbar {
+    background: rgba(15, 17, 21, 0.98);
+    border-bottom-color: var(--border);
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+  }
+
+  .nav-container {
+    min-height: var(--nav-height);
+  }
+
   .hamburger {
     display: flex;
   }
@@ -1417,7 +1435,7 @@ a.contact-item:hover {
     gap: 2px;
     padding: 16px 18px 22px;
     border-bottom: 1px solid var(--border);
-    background: rgba(6, 11, 24, 0.97);
+    background: rgba(15, 17, 21, 0.99);
     box-shadow: 0 24px 40px rgba(0, 0, 0, 0.35);
     opacity: 0;
     visibility: hidden;
@@ -1430,7 +1448,8 @@ a.contact-item:hover {
 
   @supports (backdrop-filter: blur(1px)) {
     .nav-menu {
-      background: rgba(6, 11, 24, 0.9);
+      background: rgba(15, 17, 21, 0.97);
+      -webkit-backdrop-filter: blur(16px);
       backdrop-filter: blur(16px);
     }
   }
