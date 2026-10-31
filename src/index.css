@@ -882,6 +882,25 @@ main:focus {
   gap: 18px;
 }
 
+.project-link-unavailable {
+  appearance: none;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: not-allowed;
+  opacity: 0.65;
+}
+
+.project-link-unavailable:hover {
+  gap: 7px;
+  color: var(--accent);
+}
+
+.project-link-unavailable span {
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+
 /* Certificates */
 .certificates-grid {
   display: grid;

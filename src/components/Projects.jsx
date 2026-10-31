@@ -42,16 +42,28 @@ export default function Projects() {
                 {project.links.length > 0 ? (
                   <div className="project-links">
                     {project.links.map((link) => (
-                      <a
-                        key={link.label}
-                        href={link.href}
-                        className="text-link"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        {link.label}
-                        <Icon name="external" size={16} />
-                      </a>
+                      link.disabled ? (
+                        <button
+                          key={link.label}
+                          type="button"
+                          className="text-link project-link-unavailable"
+                          disabled
+                        >
+                          {link.label}
+                          <span>Coming soon</span>
+                        </button>
+                      ) : (
+                        <a
+                          key={link.label}
+                          href={link.href}
+                          className="text-link"
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          {link.label}
+                          <Icon name="external" size={16} />
+                        </a>
+                      )
                     ))}
                   </div>
                 ) : null}

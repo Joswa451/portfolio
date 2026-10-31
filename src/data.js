@@ -1,6 +1,7 @@
 import acecarImage from './assets/acecar.webp'
 import carwashImage from './assets/carwash.webp'
 import gymhubImage from './assets/gymhub.webp'
+import pikaChillImage from './assets/image.png'
 import profileImage from './assets/img.webp'
 import portfolioImage from './assets/pf.webp'
 import achievementImage from './assets/wit.webp'
@@ -86,6 +87,17 @@ export const orbitIcons = [
 
 export const projects = [
   {
+    title: 'Pika-Chill',
+    image: pikaChillImage,
+    description:
+      'A restaurant ordering experience where customers can browse the menu, add items to their cart, and explore delivery, takeout, and reservation options.',
+    tech: [],
+    links: [
+      { label: 'GitHub', href: 'https://github.com/Joswa451?tab=repositories' },
+      { label: 'Live Demo', href: 'https://pikachill.vercel.app' },
+    ],
+  },
+  {
     title: 'AceCar',
     image: acecarImage,
     description:
@@ -93,6 +105,7 @@ export const projects = [
     tech: ['Python', 'SQL', 'MySQL', 'Express.js', 'REST APIs'],
     links: [
       { label: 'GitHub', href: 'https://github.com/Joshua14-dot' },
+      { label: 'Live Demo', disabled: true },
     ],
   },
   {
@@ -101,7 +114,10 @@ export const projects = [
     description:
       'An interactive personal portfolio with a responsive layout, subtle motion, and accessible design, built to showcase my projects and certificates.',
     tech: ['React', 'CSS', 'JavaScript', 'Vite'],
-    links: [{ label: 'GitHub', href: 'https://github.com/Joshua14-dot/myportfolio' }],
+    links: [
+      { label: 'GitHub', href: 'https://github.com/Joshua14-dot/myportfolio' },
+      { label: 'Live Demo', disabled: true },
+    ],
   },
   {
     title: 'Niceday Carwash',
@@ -109,7 +125,10 @@ export const projects = [
     description:
       'Nice Day Carwash offers a premium car wash experience in Iloilo City, with professional, eco-friendly services where luxury meets convenience.',
     tech: ['Python', 'SQL', 'MySQL', 'Express.js'],
-    links: [{ label: 'GitHub', href: 'https://github.com/Joshua14-dot/NiceDay-Carwash-' }],
+    links: [
+      { label: 'GitHub', href: 'https://github.com/Joshua14-dot/NiceDay-Carwash-' },
+      { label: 'Live Demo', disabled: true },
+    ],
   },
   {
     title: 'E-Commerce Gym Hub',
@@ -119,6 +138,7 @@ export const projects = [
     tech: ['Python', 'SQL', 'MySQL', 'Express.js'],
     links: [
       { label: 'GitHub', href: 'https://github.com/Joshua14-dot' },
+      { label: 'Live Demo', disabled: true },
     ],
   },
 ]
