@@ -93,7 +93,7 @@ export const projects = [
       'A restaurant ordering experience where customers can browse the menu, add items to their cart, and explore delivery, takeout, and reservation options.',
     tech: [],
     links: [
-      { label: 'GitHub', href: 'https://github.com/Joswa451?tab=repositories' },
+      { label: 'GitHub', href: 'https://github.com/Joswa451/Pika-Chill' },
       { label: 'Live Demo', href: 'https://pikachill.vercel.app' },
     ],
   },
