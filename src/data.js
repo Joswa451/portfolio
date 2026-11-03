@@ -123,8 +123,8 @@ export const projects = [
     title: 'Niceday Carwash',
     image: carwashImage,
     description:
-      'Nice Day Carwash offers a premium car wash experience in Iloilo City, with professional, eco-friendly services where luxury meets convenience.',
-    tech: ['Python', 'SQL', 'MySQL', 'Express.js'],
+      'A premium car wash booking platform for Iloilo City, offering eco-friendly services, online appointments, customer accounts, and an admin dashboard for managing bookings.',
+    tech: ['React', 'Python', 'Flask', 'MySQL'],
     links: [
       { label: 'GitHub', href: 'https://github.com/Joshua14-dot/NiceDay-Carwash-' },
       { label: 'Live Demo', href: 'https://niceday-carwash.vercel.app/' },
