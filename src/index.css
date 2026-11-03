@@ -1551,6 +1551,38 @@ a.contact-item:hover {
     font-size: 1.35rem;
   }
 
+  .about-text,
+  .contact-info,
+  .project-content,
+  .certificate-content {
+    text-align: center;
+  }
+
+  .about-text > p,
+  .contact-info > p {
+    margin-inline: auto;
+  }
+
+  .skills-grid,
+  .project-tech,
+  .project-links,
+  .social-links {
+    justify-content: center;
+  }
+
+  .contact-details {
+    justify-items: center;
+  }
+
+  .contact-item {
+    justify-content: center;
+  }
+
+  .project-links .text-link,
+  .certificate-content .text-link {
+    margin-inline: auto;
+  }
+
   .projects-grid,
   .certificates-grid {
     grid-template-columns: minmax(0, 1fr);
@@ -1561,6 +1593,8 @@ a.contact-item:hover {
   }
 
   .contact-form {
+    width: 100%;
+    margin-inline: auto;
     padding: 22px;
   }
 
