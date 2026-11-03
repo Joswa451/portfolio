@@ -90,8 +90,8 @@ export const projects = [
     title: 'Pika-Chill',
     image: pikaChillImage,
     description:
-      'A restaurant ordering experience where customers can browse the menu, add items to their cart, and explore delivery, takeout, and reservation options.',
-    tech: [],
+      'A web-based online ordering system where customers can browse the menu, place orders, and track status, while admins manage products, inventory, and sales from a central dashboard.',
+    tech: ['React', 'Tailwind CSS', 'Node.js', 'Express.js', 'Supabase', 'PostgreSQL'],
     links: [
       { label: 'GitHub', href: 'https://github.com/Joswa451/Pika-Chill' },
       { label: 'Live Demo', href: 'https://pikachill.vercel.app' },
