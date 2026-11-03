@@ -127,7 +127,7 @@ export const projects = [
     tech: ['Python', 'SQL', 'MySQL', 'Express.js'],
     links: [
       { label: 'GitHub', href: 'https://github.com/Joshua14-dot/NiceDay-Carwash-' },
-      { label: 'Live Demo', disabled: true },
+      { label: 'Live Demo', href: 'https://niceday-carwash.vercel.app/' },
     ],
   },
   {
