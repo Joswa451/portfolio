@@ -1,4 +1,4 @@
-import { certificates, projects, skills } from '../data'
+import { certificates, projects } from '../data'
 import SectionHeading from './SectionHeading'
 
 export default function About() {
@@ -34,17 +34,6 @@ export default function About() {
                 <span>Student &amp; learner</span>
               </li>
             </ul>
-
-            <div className="skills">
-              <h3>Skills &amp; Technologies</h3>
-              <ul className="skills-grid">
-                {skills.map((skill) => (
-                  <li key={skill} className="skill-tag">
-                    {skill}
-                  </li>
-                ))}
-              </ul>
-            </div>
           </div>
 
           <div className="about-visual reveal">

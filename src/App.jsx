@@ -7,6 +7,7 @@ import Hero from './components/Hero'
 import Lightbox from './components/Lightbox'
 import Navbar from './components/Navbar'
 import Projects from './components/Projects'
+import Skills from './components/Skills'
 import { sectionIds } from './data'
 import { useActiveSection, useScrollReveal } from './hooks'
 
@@ -35,6 +36,7 @@ export default function App() {
       <main id="main" tabIndex={-1}>
         <Hero />
         <About />
+        <Skills />
         <Projects />
         <Certificates onOpenImage={openImage} />
         <Contact />

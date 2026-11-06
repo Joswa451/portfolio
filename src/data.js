@@ -16,6 +16,20 @@ import reactIcon from './assets/icons/react-original.svg'
 import nodeIcon from './assets/icons/nodejs-original.svg'
 import pythonIcon from './assets/icons/python-original.svg'
 import gitIcon from './assets/icons/git-original.svg'
+import nextjsIcon from './assets/icons/skills/nextdotjs.svg'
+import tailwindIcon from './assets/icons/skills/tailwindcss-original.svg'
+import expressIcon from './assets/icons/skills/express.svg'
+import flaskIcon from './assets/icons/skills/flask.svg'
+import postgresIcon from './assets/icons/skills/postgresql-original.svg'
+import mysqlIcon from './assets/icons/skills/mysql-original.svg'
+import sqliteIcon from './assets/icons/skills/sqlite-original.svg'
+import supabaseIcon from './assets/icons/skills/supabase-original.svg'
+import githubIcon from './assets/icons/skills/github.svg'
+import vscodeIcon from './assets/icons/skills/vscode-original.svg'
+import figmaIcon from './assets/icons/skills/figma-original.svg'
+import vercelIcon from './assets/icons/skills/vercel.svg'
+import renderIcon from './assets/icons/skills/render.svg'
+import xamppIcon from './assets/icons/skills/xampp.svg'
 
 export const fullName = 'Joshua Mansueto'
 export const firstName = 'Josh'
@@ -23,6 +37,7 @@ export const firstName = 'Josh'
 export const navItems = [
   { id: 'home', label: 'Home' },
   { id: 'about', label: 'About' },
+  { id: 'skills', label: 'Skills' },
   { id: 'projects', label: 'Projects' },
   { id: 'certificates', label: 'Certificates' },
   { id: 'contact', label: 'Contact' },
@@ -59,20 +74,65 @@ export const profile = {
   ],
 }
 
-export const skills = [
-  'HTML',
-  'CSS',
-  'JavaScript',
-  'React',
-  'Node.js',
-  'Python',
-  'SQL',
-  'MySQL',
-  'Express.js',
-  'REST APIs',
-  'Responsive Design',
-  'UI/UX',
-  'GitHub',
+export const skillCategories = [
+  {
+    id: 'frontend',
+    icon: 'frontend',
+    title: 'Frontend Development',
+    description:
+      'Building responsive, interactive, and user-friendly interfaces using modern frontend technologies.',
+    technologies: [
+      { name: 'HTML', icon: htmlIcon },
+      { name: 'CSS', icon: cssIcon },
+      { name: 'JavaScript', icon: jsIcon },
+      { name: 'React', icon: reactIcon },
+      { name: 'Next.js', icon: nextjsIcon },
+      { name: 'Tailwind CSS', icon: tailwindIcon },
+    ],
+  },
+  {
+    id: 'backend',
+    icon: 'backend',
+    title: 'Backend Development',
+    description:
+      'Developing server-side applications, API integrations, backend logic, and application functionality.',
+    technologies: [
+      { name: 'Node.js', icon: nodeIcon },
+      { name: 'Express.js', icon: expressIcon },
+      { name: 'Python', icon: pythonIcon },
+      { name: 'Flask', icon: flaskIcon },
+      { name: 'REST APIs', icon: 'api' },
+    ],
+  },
+  {
+    id: 'database',
+    icon: 'database',
+    title: 'Database Management',
+    description:
+      'Managing structured data, designing database systems, and integrating applications with reliable database solutions.',
+    technologies: [
+      { name: 'PostgreSQL', icon: postgresIcon },
+      { name: 'MySQL', icon: mysqlIcon },
+      { name: 'SQLite', icon: sqliteIcon },
+      { name: 'Supabase', icon: supabaseIcon },
+    ],
+  },
+  {
+    id: 'tools',
+    icon: 'tools',
+    title: 'Tools & Platforms',
+    description:
+      'Using development tools, version control, design platforms, and deployment services to build and maintain web applications.',
+    technologies: [
+      { name: 'Git', icon: gitIcon },
+      { name: 'GitHub', icon: githubIcon },
+      { name: 'Visual Studio Code', icon: vscodeIcon },
+      { name: 'Figma', icon: figmaIcon },
+      { name: 'Vercel', icon: vercelIcon },
+      { name: 'Render', icon: renderIcon },
+      { name: 'XAMPP', icon: xamppIcon },
+    ],
+  },
 ]
 
 export const orbitIcons = [
